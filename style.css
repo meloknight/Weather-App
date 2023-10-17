@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mobile First design
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.body-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content-container {
+  height: 100%;
+  width: 100%;
+  /* background: rgb(99, 85, 85); */
+  /* background-image: ; */
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.body-container > img {
+  width: 200vw;
+  z-index: -10;
+  position: absolute;
+}
+
+.top-container {
+  /* border: 1px solid blue; */
+  display: grid;
+  justify-content: left;
+  align-items: center;
+}
+
+.top-container > input {
+  border-radius: 5px;
+  border: none;
+  height: 65%;
+  width: 65vw;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  background-color: rgba(141, 141, 141, 0.75);
+  color: white;
+}
+
+.top-container > input::placeholder {
+  color: white;
+}
+
+.middle-container {
+  /* position: relative; */
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.middle-container > h1 {
+  font-size: 45vw;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+}
+
+.middle-container > h3 {
+  font-size: 10vw;
+  display: grid;
+  align-items: start;
+  justify-content: end;
+  padding-right: 10%;
+}
+
+.middle-container::after {
+  content: "";
+  background-color: grey;
+  height: 2px;
+  width: 80vw;
+  position: relative;
+  left: 10%;
+}
+
+.bottom-container {
+  padding-left: 10%;
+  padding-top: 30px;
+  display: grid;
+  padding-bottom: 16px;
+}
+
+.bottom-container > h2 {
+  font-size: 8vw;
+}
+
+.bottom-container > p {
+  font-size: 6vw;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add Media Queries for wider screens
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+@media (min-width: 550px) {
+  .content-container {
+    border: 10px solid red;
+  }
+}
