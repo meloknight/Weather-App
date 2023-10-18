@@ -56,7 +56,7 @@ Mobile First design
   margin-left: 3rem;
   margin-top: 10px;
   font-size: 1.4rem;
-  background-color: rgba(141, 141, 141, 0.75);
+  background-color: rgba(141, 141, 141, 0.425);
   color: white;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.726);
 }
@@ -72,7 +72,8 @@ Mobile First design
 }
 
 .middle-container > h1 {
-  font-size: 45vw;
+  /* font-size: 45vw; */
+  font-size: 12rem;
   display: grid;
   justify-items: center;
   align-items: end;
@@ -108,7 +109,7 @@ Mobile First design
 
 .bottom-container > p {
   font-weight: 900;
-  font-size: 6vw;
+  font-size: 8vw;
 }
 
 /* 
